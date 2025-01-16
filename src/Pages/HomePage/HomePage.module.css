@@ -1,0 +1,37 @@
+.section {
+  height: 91vh;
+  background: url(/HeroImg-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.div {
+  align-self: center;
+  margin-left: 64px;
+}
+.title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 0.66667;
+  color: #f7f7f7;
+}
+.text {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #f7f7f7;
+}
+
+.link {
+  display: block;
+  width: 173px;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  .section {
+    background: url(/HeroImg-2x-min.png);
+    background-size: cover;
+  }
+}

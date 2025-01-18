@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { selectForm } from "../../Redux/filters/selectors";
+import { selectForm } from "../../Redux/filters/selector";
 import { setForm } from "../../Redux/filters/slice";
 
 import icons from "../../../public/icons/icons.svg";
-import { type } from "./Type";
+import { type } from "./type";
 
-import css from "./Type.module.css";
+import css from "./TruckType.module.css";
 
 export default function TruckType() {
   const dispatch = useDispatch();

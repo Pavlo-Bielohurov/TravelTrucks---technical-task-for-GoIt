@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
 
 import { toggleFilters } from "../../Redux/filters/slice";
-import { selectFilters } from "../../Redux/filters/selectors";
+import { selectFilters } from "../../Redux/filters/selector";
 
 import icons from "../../../public/icons/icons.svg";
 // import { capitalize } from "../../helpers/utils";
 
-import css from "./Equipment.module.css";
+import css from "./Eguipment.module.css";
 
 export const Equipment = () => {
   const dispatch = useDispatch();

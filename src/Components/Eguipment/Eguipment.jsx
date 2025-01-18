@@ -20,8 +20,8 @@ export const Equipment = () => {
   };
 
   return (
-    <fieldset className={css.fieldset}>
-      <legend className={css.legend}>Vehicle equipment</legend>
+    <div className={css.div}>
+      <legend className={css.title}>Vehicle equipment</legend>
       <hr className={css.line} />
       <ul className={css.inputsWrapper}>
         {options.map((item) => (
@@ -46,7 +46,7 @@ export const Equipment = () => {
           </li>
         ))}
       </ul>
-    </fieldset>
+    </div>
   );
 };
 

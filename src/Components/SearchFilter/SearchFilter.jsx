@@ -8,7 +8,7 @@ export default function SearchFilter() {
   return (
     <div className={css.wrapper}>
       <Location />
-      <h3 className={css.title}>Filters</h3>
+      <p className={css.text}>Filters</p>
       <Equipment />
       <TruckType />
     </div>

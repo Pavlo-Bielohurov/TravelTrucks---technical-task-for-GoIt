@@ -1,0 +1,68 @@
+.container {
+  font-weight: 500;
+  width: 100%;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #dadde1;
+  background-color: #f7f7f7;
+}
+
+.icon {
+  color: #101828;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.trucksListSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.trucksList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.trucksListItem {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid #dadde1;
+  background-color: #ffffff;
+  max-width: 890px;
+  box-shadow: 2px 4px 6px #dadde1;
+}
+
+.btn {
+  width: 145px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 200px;
+  border: 1px solid #dadde1;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.08px;
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+  border-color: #d84343;
+}

@@ -38,12 +38,10 @@ export default function CatalogPage() {
 
   return (
     <div className={css.mainwrapper}>
-      {/* <Container> */}
-      {/* <PageContainer> */}
-      <SearchFilter />
-      <TrucksList />
-      {/* </PageContainer> */}
-      {/* </Container> */}
+      <div className={css.container}>
+        <SearchFilter />
+        <TrucksList />
+      </div>
     </div>
   );
 }

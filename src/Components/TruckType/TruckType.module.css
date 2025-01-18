@@ -17,8 +17,6 @@
   align-items: center;
   padding: 16px 18px;
   gap: 8px;
-  width: 100%;
-  height: 100%;
   border-radius: 10px;
   border: 1px solid #dadde1;
   box-shadow: 2px 4px 6px #dadde1;
@@ -56,7 +54,7 @@
   flex-wrap: wrap;
 }
 
-.legend {
+.text {
   color: #101828;
   font-size: 20px;
   font-weight: 600;

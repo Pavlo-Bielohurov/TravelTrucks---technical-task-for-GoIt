@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #475467;
+  margin-top: 40px;
+}

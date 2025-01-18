@@ -1,12 +1,16 @@
+import Location from "../Location/Location";
+import Equipment from "../Eguipment/Eguipment";
+import TruckType from "../TruckType/TruckType";
+
 import css from "./SearchFilter.module.css";
-import Button from "../Button/Button";
 
 export default function SearchFilter() {
   return (
-    <div className={css.div}>
-      <p>Location</p>
-      <p>Filters</p>
-      <Button text="Search" />
+    <div className={css.wrapper}>
+      <Location />
+      <h3 className={css.title}>Filters</h3>
+      <Equipment />
+      <TruckType />
     </div>
   );
 }

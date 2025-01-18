@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectForm } from "../../Redux/filters/selector";
 import { setForm } from "../../Redux/filters/slice";
 
-import icons from "../../../public/icons/icons.svg";
+import icons from "/icons/icons.svg";
 import { type } from "./type";
 
 import css from "./TruckType.module.css";

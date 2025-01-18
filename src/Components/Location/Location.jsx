@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectLocation } from "../../Redux/filters/selector";
 import { setLocation } from "../../Redux/filters/slice";
 
-import icons from "../../../public/icons/icons.svg";
+import icons from "/icons/icons.svg";
 
-import { citiList } from "../../../public/citiList";
+import { citiList } from "./citiList";
 
 import css from "./Location.module.css";
 

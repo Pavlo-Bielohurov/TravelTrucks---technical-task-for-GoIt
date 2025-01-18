@@ -2,7 +2,7 @@ import { NavLink, Link } from "react-router";
 import clsx from "clsx";
 import css from "./Navigation.module.css";
 
-import logo from "../../../public/icons/Logo.svg";
+import logo from "/icons/Logo.svg";
 
 const navLinkStyle = (props) => {
   return clsx(css.link, props.isActive && css.isActive);

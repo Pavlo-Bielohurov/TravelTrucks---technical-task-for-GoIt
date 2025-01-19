@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 
-import { getAllTrucks } from "../../Redux/Trucks/operations";
-import { selectLimit } from "../../Redux/Trucks/selectors";
-import { resetPage } from "../../Redux/Trucks/slice";
+import { getAllTrucks } from "../../Redux/trucks/operations";
+import { selectLimit } from "../../Redux/trucks/selectors";
+import { resetPage } from "../../Redux/trucks/slice";
 import {
   selectFilters,
   selectForm,

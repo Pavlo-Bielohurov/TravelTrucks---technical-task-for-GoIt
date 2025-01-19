@@ -7,9 +7,9 @@ import {
   selectIsLoading,
   selectLimit,
   selectPage,
-} from "../../Redux/Trucks/selectors";
-import { incrementPage } from "../../Redux/Trucks/slice";
-import { getAllTrucks } from "../../Redux/Trucks/operations";
+} from "../../Redux/trucks/selectors";
+import { incrementPage } from "../../Redux/trucks/slice";
+import { getAllTrucks } from "../../Redux/trucks/operations";
 import {
   selectFilters,
   selectForm,

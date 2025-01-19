@@ -78,7 +78,7 @@ export default function TruckItem({ truck }) {
         <p className={css.description}>{truck.description}</p>
         <SpecificationList truck={truck} />
         <Link
-          to={`/catalog/${truck.id}/features`}
+          to={`/catalog/${truck.id}`}
           className={css.btn}
           aria-label="Show more information about truck"
         >

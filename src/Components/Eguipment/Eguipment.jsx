@@ -4,11 +4,10 @@ import { toggleFilters } from "../../Redux/filters/slice";
 import { selectFilters } from "../../Redux/filters/selector";
 
 import icons from "/icons/icons.svg";
-// import { capitalize } from "../../helpers/utils";
 
 import css from "./Eguipment.module.css";
 
-export const Equipment = () => {
+export default function Equipment() {
   const dispatch = useDispatch();
   const filters = useSelector(selectFilters);
 
@@ -48,6 +47,4 @@ export const Equipment = () => {
       </ul>
     </div>
   );
-};
-
-export default Equipment;
+}

@@ -1,7 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router";
 import Navigation from "../Navigation/Navigation";
-// import "./App.css";
 
 const CatalogPage = lazy(() =>
   import("../../Pages/CatalogPage/CatalogPage.jsx")

@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 
 import { selectLocation } from "../../Redux/filters/selector";
-import { toggleFavorites } from "../../Redux/favorite/slice";
+import { addFavorite, removeFavorite } from "../../Redux/favorite/slice";
 import { selectFavoritesList } from "../../Redux/favorite/selector";
 
 import SpecificationList from "../SpecificationList/SpecificationList";
@@ -15,12 +15,16 @@ export default function TruckItem({ truck }) {
   const dispatch = useDispatch();
   const selectedLocation = useSelector(selectLocation);
   const favoritesList = useSelector(selectFavoritesList);
-  const isFavorite = favoritesList.includes(truck.id);
+  const isFavorite = favoritesList.some((item) => item.id === truck.id);
   const isSelectedLocation =
     selectedLocation.split(",")[0] === truck.location.split(",")[1].trim();
 
-  const handleFavoriteClick = () => {
-    dispatch(toggleFavorites(truck.id));
+  const toggleFavoriteClick = () => {
+    if (!isFavorite) {
+      dispatch(addFavorite(truck));
+    } else {
+      dispatch(removeFavorite(truck.id));
+    }
   };
 
   return (
@@ -45,7 +49,7 @@ export default function TruckItem({ truck }) {
                 height={24}
                 className={css.icon}
                 aria-label="Add to favorites"
-                onClick={handleFavoriteClick}
+                onClick={toggleFavoriteClick}
               >
                 <use href={`${icons}#heart`} />
               </svg>

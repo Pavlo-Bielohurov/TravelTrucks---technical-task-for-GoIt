@@ -25,6 +25,11 @@ export default function Navigation() {
             Catalog
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/favorite" className={navLinkStyle}>
+            Favotite
+          </NavLink>
+        </li>
       </ul>
     </header>
   );

@@ -9,7 +9,7 @@ import { citiList } from "./citiList";
 
 import css from "./Location.module.css";
 
-const LocationSelect = () => {
+export default function LocationSelect() {
   const dispatch = useDispatch();
   const selectedLocation = useSelector(selectLocation);
 
@@ -42,6 +42,4 @@ const LocationSelect = () => {
       </div>
     </div>
   );
-};
-
-export default LocationSelect;
+}

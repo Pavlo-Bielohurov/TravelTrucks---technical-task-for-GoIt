@@ -9,7 +9,7 @@ export default function HomePage() {
         <p className={css.text}>
           You can find everything you want in our catalog
         </p>
-        <Link to="/catalog" className={css.link}>
+        <Link to="/catalog">
           <button type="button" className={css.btn}>
             View Now
           </button>

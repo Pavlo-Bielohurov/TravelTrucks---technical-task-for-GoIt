@@ -47,9 +47,6 @@ export default function CampersList() {
     });
     dispatch(getAllTrucks(filters));
   };
-
-  console.log(trucks);
-
   return (
     <>
       {isError ? (

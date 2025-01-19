@@ -9,6 +9,9 @@ const CatalogPage = lazy(() =>
 const DetailsPage = lazy(() =>
   import("../../Pages/DetalisPage/DetailsPage.jsx")
 );
+const FavoritePage = lazy(() =>
+  import("../../Pages/FavoritePage/FavoritePage.jsx")
+);
 const HomePage = lazy(() => import("../../Pages/HomePage/HomePage.jsx"));
 const NotFoundPage = lazy(() =>
   import("../../Pages/NorFoundPage/NotFoundPage.jsx")
@@ -27,6 +30,7 @@ function App() {
           <Route path="features" element={<Features />} />
           <Route path="reviews" element={<Reviews />} />
         </Route>
+        <Route path="/favorite" element={<FavoritePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>

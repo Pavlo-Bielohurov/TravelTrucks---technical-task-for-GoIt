@@ -1,8 +1,7 @@
 .reviewsContainer {
   display: flex;
-  gap: 40px;
   padding-top: 44px;
-  padding-bottom: 80px;
+  justify-content: space-between;
 }
 
 .wrapperContent {

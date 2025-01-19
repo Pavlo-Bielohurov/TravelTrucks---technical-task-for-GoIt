@@ -1,8 +1,7 @@
 .featuresContainer {
   display: flex;
-  gap: 40px;
   padding-top: 44px;
-  padding-bottom: 80px;
+  justify-content: space-between;
 }
 
 .contentWrapper {
@@ -11,10 +10,11 @@
   justify-content: center;
   align-items: center;
   gap: 100px;
-  padding: 44px 52px;
   width: 631px;
   border-radius: 10px;
   background: #f7f7f7;
+  padding: 44px 52px;
+  box-sizing: border-box;
 }
 
 .specificationListWrapper {

@@ -9,7 +9,6 @@ import { getTruckById } from "../../Redux/trucks/operations";
 
 import DetailsTruckItem from "../../Components/DetailsTruckItem/DetailsTruckItem";
 import Loader from "../../Components/Loader/Loader";
-import BookingForm from "../../Components/BookingForm/BookingForm";
 
 import css from "./DetailsPage.module.css";
 
@@ -33,7 +32,7 @@ export default function DetailsPage() {
       {truck && (
         <>
           <DetailsTruckItem />
-          <ul className={css.currentTruckDetails}>
+          <ul className={css.TruckDetails}>
             <li>
               <NavLink to="features" className={getClassName}>
                 Features
@@ -45,14 +44,7 @@ export default function DetailsPage() {
               </NavLink>
             </li>
           </ul>
-          <div className={css.wrapperBottom}>
-            <div className={css.outlet}>
-              <Outlet />
-            </div>
-            <div className={css.formWrapper}>
-              <BookingForm />
-            </div>
-          </div>
+          <Outlet />
         </>
       )}
     </div>

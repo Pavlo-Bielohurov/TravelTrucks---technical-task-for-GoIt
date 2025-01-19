@@ -2,6 +2,8 @@ import { useSelector } from "react-redux";
 
 import { selectTruckById } from "../../Redux/trucks/selectors";
 
+import BookingForm from "../BookingForm/BookingForm";
+
 import icons from "/icons/icons.svg";
 
 import css from "./Reviews.module.css";
@@ -40,6 +42,7 @@ export default function Reviews() {
           </li>
         ))}
       </ul>
+      <BookingForm />
     </div>
   );
 }

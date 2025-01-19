@@ -1,8 +1,10 @@
 import { useSelector } from "react-redux";
 
 import { selectTruckById } from "../../Redux/trucks/selectors";
+
 import SpecificationList from "../SpecificationList/SpecificationList";
 import VehicleDetails from "../VehicleDetails/VehicleDetails";
+import BookingForm from "../BookingForm/BookingForm";
 
 import css from "./Features.module.css";
 
@@ -20,6 +22,7 @@ export default function Features() {
           <VehicleDetails truck={truck} />
         </div>
       </div>
+      <BookingForm />
     </div>
   );
 }

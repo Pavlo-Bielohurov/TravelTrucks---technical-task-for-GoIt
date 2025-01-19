@@ -4,7 +4,7 @@
   padding: 0 64px 80px 64px;
 }
 
-.currentTruckDetails {
+.TruckDetails {
   display: flex;
   gap: 40px;
   margin-bottom: 24px;

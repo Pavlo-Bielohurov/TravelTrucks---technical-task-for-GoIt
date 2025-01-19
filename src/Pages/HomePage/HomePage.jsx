@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import Button from "../../Components/Button/Button";
 import css from "./HomePage.module.css";
 
 export default function HomePage() {
@@ -11,7 +10,9 @@ export default function HomePage() {
           You can find everything you want in our catalog
         </p>
         <Link to="/catalog" className={css.link}>
-          <Button text="View Now" type="button" />
+          <button type="button" className={css.btn}>
+            View Now
+          </button>
         </Link>
       </div>
     </section>

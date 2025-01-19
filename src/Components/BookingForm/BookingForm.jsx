@@ -1,6 +1,8 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import DatePicker from "react-datepicker";
+import { ToastContainer, toast } from "react-toastify";
+
 import "react-datepicker/dist/react-datepicker.css";
 import css from "./BookingForm.module.css";
 
@@ -22,6 +24,9 @@ export default function BookingForm() {
   });
 
   const handleSubmit = (action) => {
+    toast.success(
+      "Congratulations, your reservation is successful. We will contact you shortly!"
+    );
     action.resetForm();
   };
 
@@ -92,6 +97,7 @@ export default function BookingForm() {
           </Form>
         )}
       </Formik>
+      <ToastContainer />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  height: 91.7vh;
+  height: 91.3vh;
   background: url(/HeroImg-min.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,9 +27,30 @@
   margin-bottom: 40px;
 }
 
-.link {
+/* .link {
   display: block;
   width: 173px;
+} */
+
+.btn {
+  width: 173px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  border-radius: 200px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.08px;
+  background-color: #e44848;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+  background-color: #d84343;
 }
 
 @media only screen and (min-resolution: 192dpi) {

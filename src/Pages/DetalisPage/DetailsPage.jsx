@@ -9,16 +9,13 @@ import { getTruckById } from "../../Redux/trucks/operations";
 
 import DetailsTruckItem from "../../Components/DetailsTruckItem/DetailsTruckItem";
 import Loader from "../../Components/Loader/Loader";
-import BookingForm from "../../Components/App/BookingForm/BookingForm";
-// import Menu from "../../components/Menu/Menu";
+import BookingForm from "../../Components/BookingForm/BookingForm";
 
 import css from "./DetailsPage.module.css";
 
 const getClassName = (props) => {
   return clsx(css.link, props.isActive && css.active);
 };
-
-// const paths = ["features", "reviews"];
 
 export default function DetailsPage() {
   const dispatch = useDispatch();
@@ -36,7 +33,7 @@ export default function DetailsPage() {
       {truck && (
         <>
           <DetailsTruckItem />
-          <ul className={css.currentCamperDetails}>
+          <ul className={css.currentTruckDetails}>
             <li>
               <NavLink to="features" className={getClassName}>
                 Features
@@ -48,7 +45,6 @@ export default function DetailsPage() {
               </NavLink>
             </li>
           </ul>
-          {/* <hr className={css.horizontLine} /> */}
           <div className={css.wrapperBottom}>
             <div className={css.outlet}>
               <Outlet />
@@ -57,8 +53,6 @@ export default function DetailsPage() {
               <BookingForm />
             </div>
           </div>
-          {/* <Menu paths={paths} /> */}
-          {/* <Outlet /> */}
         </>
       )}
     </div>

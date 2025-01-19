@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useSelector } from "react-redux";
 
-import { selectFilters, selectForm } from "../../Redux/filters/selector";
+import { selectFilters, selectForm } from "../../redux/filters/selector";
 
 import { Specification } from "./Specification";
 import SpecificationItem from "../SpecificationItem/SpecificationItem";

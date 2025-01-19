@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import { NavLink } from "react-router";
 import clsx from "clsx";
 
-import { selectTruckById, selectIsLoading } from "../../Redux/trucks/selectors";
-import { getTruckById } from "../../Redux/trucks/operations";
+import { selectTruckById, selectIsLoading } from "../../redux/trucks/selectors";
+import { getTruckById } from "../../redux/trucks/operations";
 
 import DetailsTruckItem from "../../Components/DetailsTruckItem/DetailsTruckItem";
 import Loader from "../../Components/Loader/Loader";

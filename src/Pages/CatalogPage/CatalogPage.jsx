@@ -1,14 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 
-import { getAllTrucks } from "../../Redux/trucks/operations";
-import { selectLimit } from "../../Redux/trucks/selectors";
-import { resetPage } from "../../Redux/trucks/slice";
+import { getAllTrucks } from "../../redux/trucks/operations";
+import { selectLimit } from "../../redux/trucks/selectors";
+import { resetPage } from "../../redux/trucks/slice";
 import {
   selectFilters,
   selectForm,
   selectLocation,
-} from "../../Redux/filters/selector";
+} from "../../redux/filters/selector";
 
 import TrucksList from "../../Components/TrucksList/TrucksList";
 import SearchFilter from "../../Components/SearchFilter/SearchFilter";

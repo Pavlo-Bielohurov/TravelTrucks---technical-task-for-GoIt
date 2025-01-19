@@ -2,9 +2,9 @@
 import { Link } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 
-import { selectLocation } from "../../Redux/filters/selector";
-import { addFavorite, removeFavorite } from "../../Redux/favorite/slice";
-import { selectFavoritesList } from "../../Redux/favorite/selector";
+import { selectLocation } from "../../redux/filters/selector";
+import { addFavorite, removeFavorite } from "../../redux/favorite/slice";
+import { selectFavoritesList } from "../../redux/favorite/selector";
 
 import SpecificationList from "../SpecificationList/SpecificationList";
 

@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
-import { selectFavoritesList } from "../../Redux/favorite/selector";
-import { selectIsLoading } from "../../Redux/trucks/selectors";
+import { selectFavoritesList } from "../../redux/favorite/selector";
+import { selectIsLoading } from "../../redux/trucks/selectors";
 
 import TruckItem from "../../Components/TruckItem/TruckItem";
 import Loader from "../../Components/Loader/Loader";

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { toggleFilters } from "../../Redux/filters/slice";
-import { selectFilters } from "../../Redux/filters/selector";
+import { toggleFilters } from "../../redux/filters/slice";
+import { selectFilters } from "../../redux/filters/selector";
 
 import icons from "/icons/icons.svg";
 

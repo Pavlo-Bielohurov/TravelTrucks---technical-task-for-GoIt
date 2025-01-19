@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 
-import { selectTruckById } from "../../Redux/trucks/selectors";
+import { selectTruckById } from "../../redux/trucks/selectors";
 
 import SpecificationList from "../SpecificationList/SpecificationList";
 import VehicleDetails from "../VehicleDetails/VehicleDetails";

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { selectLocation } from "../../Redux/filters/selector";
-import { setLocation } from "../../Redux/filters/slice";
+import { selectLocation } from "../../redux/filters/selector";
+import { setLocation } from "../../redux/filters/slice";
 
 import icons from "/icons/icons.svg";
 

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 
-import { selectForm } from "../../Redux/filters/selector";
-import { setForm } from "../../Redux/filters/slice";
+import { selectForm } from "../../redux/filters/selector";
+import { setForm } from "../../redux/filters/slice";
 
 import icons from "/icons/icons.svg";
 import { type } from "./type";

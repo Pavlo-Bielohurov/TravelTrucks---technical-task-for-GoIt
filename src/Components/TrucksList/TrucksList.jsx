@@ -7,14 +7,14 @@ import {
   selectIsLoading,
   selectLimit,
   selectPage,
-} from "../../Redux/trucks/selectors";
-import { incrementPage } from "../../Redux/trucks/slice";
-import { getAllTrucks } from "../../Redux/trucks/operations";
+} from "../../redux/trucks/selectors";
+import { incrementPage } from "../../redux/trucks/slice";
+import { getAllTrucks } from "../../redux/trucks/operations";
 import {
   selectFilters,
   selectForm,
   selectLocation,
-} from "../../Redux/filters/selector";
+} from "../../redux/filters/selector";
 
 import TruckItem from "../TruckItem/TruckItem";
 import Loader from "../Loader/Loader";
